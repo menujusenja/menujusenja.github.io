@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Halaman Roselin</title>
+<title>Menujusenja web</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Times New Roman, Comic Sans, Montserrat;
+	background-image: url(black.jpg);}
+
+
+/*style the header*/
+.header {
+background-color: rgba(12,200,87,0.5);
+padding: 30px;
+text-align: center;
+font-size: 30px;}
+
+/*create three unequal columns that floats next to each other*/
+.column {
+	float: left;
+	padding: 10px;
+	height: 300px;/*should be removed. Only for demonstration*/} 
+
+/*left column*/
+.column.side {width: 30%}
+
+/*middle column*/
+.column.middle {width: 70%}
+
+/*clear floats after the columns*/
+.row:after {
+	content: "";
+	display: table;
+	clear: both;}
+
+/*style the footer*/
+.footer {
+	background-color: rgba(255,200,255,0.5);
+	padding: 10px;
+	text-align: center;}
+
+/*responsive layout - makes the three columns stack on top of each other instead of next toeach other*/
+@media (max-width: 600px) {
+	.column.side,
+	.column.middle {width: 100%}
+}
+
+</style>
 </head>
-<body> 
-	<h1>Halaman 1</h1>
-	<h2>Halaman 2</h2>
-	<p>Paragraf 1 dan katanya harus lebih panjang sedikit atau paling panjang(?) wkwkwk. <strong>ingat </strong><em>ini cetak miring</em></p>
-	<img src="img/red-eye.png">
+<body>
+	<h1 style="font-size: 50px;font-family: MV Boli;color: white;background-color: gray;width: 40%;">Mari Menuju Senja</h1>
+	<p style="font-size: 25px;font-family: MV Boli;color: lightcoral;background-color: white;width: 30%;">Welcome To This Page!</p> <br>
+	
+<div class="header">
+<h2 style="font-family: monospace; font-size: 50px;text-align: center;color: white;">About Me</h2>
+</div>
+
+<div class="row">
+	<div class="column side" style="background-color: aquamarine;"> <img src="img/me.jpg" alt="Roselin saat kelas 10" style="width: 360px;height:280px;"></div>
+
+	<div class="column middle" style="background-color: rgba(200,50,100,0.8);"><p style="font-size: 20px;font-family: Lucida;text-align: center;color: white;">Hai! Perkenalkan nama saya Roselin Ahmadi. Orang - orang biasanya memanggil saya Roselin, Selin, Sekun, atau Rossi (?) Entah mengapa kedua nama ajaib itu muncul ketika saya duduk di kelas 1 dan kelas 2 SMK. Yup! SMK. Yang masih sederajat dengan SMA walau beda haluan dan tujuan. Saat ini saya sedang bersekolah di SMK-SMAK Bogor yang beralamat di Jl. Binamarga No.1 di bangku kelas 2. Katakanlah sekolah ini merupakan sekolah yang 'Legend' karena berdiri sejak 1950 dan masih memiliki jurusan utamanya yakni analis kimia. Dan 'sedikit' berbeda dari sekolah pada umumnya, kami harus belajar 4 tahun lamanya agar bisa tamat di bangku SMK ini, dengan melewati segala hutan rimba yang ada di setiap harinya. Hehehe...</p></div>
+
+	<div class="column middle" style="background-color: rgba(140,160,70,0.7);"><p style="font-family: Lucida; font-size: 20px; color: white;">Lalu, saya lahir di Bogor pada tanggal 17 Maret 2001 tepatnya di daerah dekat puncak (saya lupa namanya). Namun, karena kondisi saat itu, jadilah akta saya dibuat di Jakarta dan tertulis bahwa saya lahir di Jakarta. Saya merupakan anak ke-2 dari 3 bersaudara dan merupakan satu-satunya anak perempuan di keluarga saya. Kakak laki-laki saya sudah bekerja dan jarak umur kami kurang lebih 5 tahun dan adik laki-laki saya masih menamatkan sekolahnya di bangku SMP yang berbeda 3 tahun dari saya.</p></div>
+
+	<div class="column side" style="background-image: url(leaf.jpg);"></div>
+
+	<div class="column side" style="background-color: rgba(160,200,30,0.5);"> <img src="img/Roselin 1.jpg" alt="Senangnya ke Perpus be like..." style="width: 400px;height:280px;"></div>
+
+	<div class="column middle" style="background-color: rgba(160,200,30,0.5);"><img src="img/Roselin 2.jpg" alt="Jika kita ke perpustakaan nasional" style="width: 400px;height:280px;"></div>
+
+	<div class="column middle" style="background-color: rgba(70,120,170,1.0);"><p style="color: white;font-family: Lucida;font-size: 18px;">Di keseharian saya, saya memiliki beberapa hobi dikala waktu senggang atau waktu <i>gabut</i> menyerang, seperti membaca. Kebanyakan dari yang saya baca <i>sih</i> novel, khususnya novel yang bergenre misteri, fantasi atau fiksi, namun tidak untuk romance. Entah mengapa saya tidak begitu tertarik dengan cerita bergenre romance. Mungkin kurang <i>sreg</i> saja <i>hehehe...</i>. Tapi bukan berarti saya tidak pernah membacanya sama sekali. Saya pernah membaca karya-karya Ilana Tan khususnya 4-buku-musim itu yang membuat saya menangis-nangis membacanya. Mungkin di situ pula yang saya tidak suka, novel romance benar-benar mengguncang emosi saya. Untuk novel misteri, novel yang sampai sekarang masih saya sukai teramat sangat ialah novel Sherlock Holmes karya Sir Arthur Conan Doyle meski saya masih belum bisa menamatkannya. Menurut saya, kisahnya benar-benar unik dan di luar dugaan. Dan hanya satu hentikan jari, Sherlock Holmes seperti telah menyihir saya! </p></div>
+
+	<div class="column side" style="background-color: rgba(70,170,120,1.0);"></div>
+
+
+</div>
+
+<div class="footer";>
+	<p>End</p>
+</div>
 </body>
 </html>
