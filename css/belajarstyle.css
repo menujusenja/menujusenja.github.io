@@ -1,0 +1,12 @@
+h1 {color: #DC143C}
+
+h2 {color: #DEB887}
+
+#nav {border: 5px dotted palevioletred;}
+
+#nav a {text-decoration: none;color: #0066FE}
+
+.penjelasan {
+	font-family: sans-serif;
+	font-variant: small-caps;
+}
